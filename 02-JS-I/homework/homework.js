@@ -14,7 +14,6 @@ const nuevaResta = 10 - 5 === 5;
 
 // Resuelve el siguiente problema matemático:
 const nuevaMultiplicacion = 10 * 4 === 40 ;
-
 // Resuelve el siguiente problema matemático:
 const nuevoModulo = 21 % 5 === 1;
 
@@ -29,7 +28,7 @@ function devolverString(str) {
   // "Return" la string provista: str
   // Tu código: 
   return str;
-}
+} 
 
 function suma(x, y) {
   // "x" e "y" son números
@@ -60,7 +59,10 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  if x === y return
+  if(x === y) {
+  return true;
+  }
+  return false;
   }
 
 function tienenMismaLongitud(str1, str2) {
@@ -74,14 +76,20 @@ function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+if(num < 90) {
+return true;
+}
+return false;
 }
 
 function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  if(num > 50) {
+  return true; 
+  }
+  return false;
 }
 
 function obtenerResto(x, y) {
@@ -126,6 +134,7 @@ function elevar(num, exponent) {
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
+  return Math.round(num)
 }
 
 function redondearHaciaArriba(num) {
